@@ -11,7 +11,7 @@
 	<groupId>com.amock</groupId>
 	<artifactId>hello-azure</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 	<name>hello-azure</name>
 	<description>Spring Boot Hello World On Azure</description>
 
