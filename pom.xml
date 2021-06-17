@@ -41,10 +41,7 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
-			<build>
-      <finalName>app</finalName>
-      <plugins>
-         <plugin>
+	<plugin>
             <groupId>com.microsoft.azure</groupId>
             <artifactId>azure-webapp-maven-plugin</artifactId>
             <version>1.15.0</version>
@@ -57,7 +54,8 @@
                <!-- Web App information -->
                <resourceGroup>${RESOURCEGROUP_NAME}</resourceGroup>
                <appName>${WEBAPP_NAME}</appName>
-               
+               <region>westeurope</region>
+               <pricingTier>P1v2</pricingTier>
                
                <!-- Java Runtime Stack for Web App on Windows-->
                <runtime>
